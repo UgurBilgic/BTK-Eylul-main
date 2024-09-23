@@ -84,6 +84,7 @@ img {
     position: relative;
     height: 100%;
     display: flex;
+    text-decoration: uppercase;
 }
 
 .feature-product-card-text {
@@ -149,10 +150,96 @@ img {
     height: 100%;
     justify-content: center;
     align-items: center;
+    
 }
 
 .why-choose-us-card-text {
     flex-direction: column;
     display: flex;
     gap: 10px;
+}
+
+.figure-card{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.figure-card-tag {
+    background-color: #1F4B43;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #FFFFFF;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.figure-card-image {
+    position: relative;
+    object-fit: cover;
+}
+
+.figure-card-tag-2 {
+    background-color: #f6f101;
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #000000;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.figure-card-text {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 75px 20px;
+}
+
+.figure-card-price {
+    position: absolute;
+    color: white;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 25px 20px;
+}
+
+.figure-card::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(26, 26, 26, 0.1) 60%, rgba(26, 26, 26, 0.8) 100%);
+    z-index: 1;
+    border-radius: 16px;
+}
+
+.info-part {
+    position: relative;  
+}
+
+.info-part-text {
+    position: absolute;
+    color: #ffffff;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.info-part:hover .info-part-text {
+    opacity: 1;
+    visibility: visible;
 }
