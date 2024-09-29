@@ -142,7 +142,7 @@ img {
     background-color: #E7C873;
     border-radius: 24px;
     text-align: center;
-    padding: 60px 0;
+    padding: 70px 0;
 }
 
 .why-choose-us-card {
@@ -150,7 +150,10 @@ img {
     height: 100%;
     justify-content: center;
     align-items: center;
-    
+}
+
+.why-choose-us-card-icon {
+    padding-bottom: 10px;
 }
 
 .why-choose-us-card-text {
@@ -243,3 +246,155 @@ img {
     opacity: 1;
     visibility: visible;
 }
+
+.local-expertise {
+    background-color: #1F4B43;
+    border-radius: 24px;
+}
+
+.local-expertise-image {
+    position: relative;
+}
+
+.local-expertise-image img {
+    border-radius: 24px;
+}
+
+.local-expertise-image-tag {
+    position: absolute;
+    background-color: #FFFFFF;
+    left: 40px;
+    top: 40px;
+    border-radius: 24px;
+    padding: 10px;
+    display: flex;
+    display: flex;
+    gap: 10px;
+}
+
+.local-expertise-image-tag-icon {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+}
+
+.customer-card {
+    gap: 10px;
+}
+
+.icon-star {
+    background-image: url(../img/icon/star.svg);
+    filter: grayscale(1);
+}
+
+.icon-star.active {
+    filter: grayscale(0);
+}
+
+.icon-comment {
+    background-image: url(../img/icon/comment.svg);
+    width: 60px;
+    height: 60px;
+}
+
+.comment-card-left-side-image img {
+    width: 100px;
+    height: 100px;
+}
+
+.comment-card-left-side {
+    gap: 20px;
+    align-items: center;
+}
+
+.comment-card-header {
+    justify-content: space-between;
+}
+
+.comment-card-icons {
+    background-color: #ffffff;
+
+}
+
+.icon-comment:hover {
+    background-color: antiquewhite;
+    transition: all 200ms;
+    display: inline-block;
+}
+
+.icon-comment-left {
+    background-image: url(../img/icon/icon-left.svg);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 10px;
+    gap: 20px;
+    border: 1px solid black;
+}
+
+.icon-comment-right {
+    background-image: url(../img/icon/icon-right.svg);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 10px;
+    gap: 20px;
+    border: 1px solid black;
+}
+
+.recent-article-card {
+    background-color: #ffffff;
+    border: 1px solid #E9E9E9;
+    border-radius: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    &-image {
+        position: relative;
+        span {
+            position: absolute;
+            padding: 5px 15px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffd607;
+            border-radius: 12px;
+            color: #000000;
+            visibility: hidden;
+            cursor: pointer;
+        }
+
+        img {
+            display: block;
+            border-radius: 16px 16px 0 0;
+            margin-bottom: 10px;
+        }
+    }
+
+    &-image:hover {
+        span {
+            visibility: visible;
+            transition: all 200ms;
+            display: inline-block;
+        }
+    }
+
+    &-text {
+        span {
+            display: inline-block;
+            &:not(:last-child)::after {
+                content: '';
+                height: 4px;
+                width: 4px;
+                display: inline-block;
+                border-radius: 50%;
+                background-color: #3D3E3F;
+                margin: 0 5px 0 9px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
