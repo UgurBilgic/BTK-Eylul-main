@@ -481,33 +481,193 @@
     </section>
 
     <section>
-        <div class="container">
-            <div class="row bg-body-tertiary rounded-2 mb-5">
-                <div class="col-12">
+        <div class="container bg-body-tertiary rounded-2 my-5">
+            <div class="row my-5 p-5">
+                <div class="col-12 pt-5">
                     <span class="fw-semibold fs-2 d-block text-center">Recent Articles & News</span>
                     <span class="d-block text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                 </div>
-                <div class="col-3 my-5">
-                    <div class="recent-article-card mb-5">
-                        <div class="recent-article-card-image">
-                            <span class="fw-semibold">For Sale</span>
-                            <img src="assets/img/recent/recent-1.jpg" alt="recent-1">
-                        </div>
-                        <div class="recent-article-card-text px-2 mb-2">
-                            <span>Apartment</span>
-                            <span>March 19, 2024</span>
-                        </div>
-                        <div class="recent-article-card-links p-2 mb-2">
-                            <a href="#" class="fw-semibold fs-6 text-black text-decoration-none">Housing Markets That Changed the Most This Week</a><br>
-                            <a href="#" class="fw-medium text-black text-decoration-none">Read More</a> <img src="assets/img/recent/arrow.svg" alt="arrow">
+            </div>
+            <div class="swiper slider--recent py-5">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="recent-article-card mb-5">
+                            <div class="recent-article-card-image">
+                                <span class="fw-semibold">For Sale</span>
+                                <img src="assets/img/recent/recent-1.jpg" alt="recent-1">
+                            </div>
+                            <div class="recent-article-card-text px-2 mb-2">
+                                <span>Apartment</span>
+                                <span>March 19, 2024</span>
+                            </div>
+                            <div class="recent-article-card-links p-2 mb-2">
+                                <a href="#" class="fw-semibold fs-6 text-black text-decoration-none">Housing Markets That Changed the Most This Week</a><br>
+                                <a href="#" class="fw-medium text-black text-decoration-none">Read More</a> <img src="assets/img/recent/arrow.svg" alt="arrow">
+                            </div>
                         </div>
                     </div>
-                </div>    
-            </div>
+                    <div class="swiper-slide">
+                        <div class="recent-article-card mb-5">
+                            <div class="recent-article-card-image">
+                                <span class="fw-semibold">For Sale</span>
+                                <img src="assets/img/recent/recent-2.jpg" alt="recent-1">
+                            </div>
+                            <div class="recent-article-card-text px-2 mb-2">
+                                <span>Apartment</span>
+                                <span>March 19, 2024</span>
+                            </div>
+                            <div class="recent-article-card-links p-2 mb-2">
+                                <a href="#" class="fw-semibold fs-6 text-black text-decoration-none">Read Unveils the Best Canadian Cities for Biking</a><br>
+                                <a href="#" class="fw-medium text-black text-decoration-none">Read More</a> <img src="assets/img/recent/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="recent-article-card mb-5">
+                            <div class="recent-article-card-image">
+                                <span class="fw-semibold">For Sale</span>
+                                <img src="assets/img/recent/recent-3.jpg" alt="recent-1">
+                            </div>
+                            <div class="recent-article-card-text px-2 mb-2">
+                                <span>Office</span>
+                                <span>March 19, 2024</span>
+                            </div>
+                            <div class="recent-article-card-links p-2 mb-2">
+                                <a href="#" class="fw-semibold fs-6 text-black text-decoration-none">10 Walkable Cities Where You Can Live Affordably</a><br>
+                                <a href="#" class="fw-medium text-black text-decoration-none">Read More</a> <img src="assets/img/recent/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="recent-article-card mb-5">
+                            <div class="recent-article-card-image">
+                                <span class="fw-semibold">For Sale</span>
+                                <img src="assets/img/recent/recent-4.jpg" alt="recent-1">
+                            </div>
+                            <div class="recent-article-card-text px-2 mb-2">
+                                <span>Shop</span>
+                                <span>March 19, 2024</span>
+                            </div>
+                            <div class="recent-article-card-links p-2 mb-2">
+                                <a href="#" class="fw-semibold fs-6 text-black text-decoration-none">New Apartment Nice in the Best Canadian Cities</a><br>
+                                <a href="#" class="fw-medium text-black text-decoration-none">Read More</a> <img src="assets/img/recent/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="recent-article-card mb-5">
+                            <div class="recent-article-card-image">
+                                <span class="fw-semibold">For Sale</span>
+                                <img src="assets/img/recent/recent-2.jpg" alt="recent-1">
+                            </div>
+                            <div class="recent-article-card-text px-2 mb-2">
+                                <span>Market</span>
+                                <span>March 19, 2024</span>
+                            </div>
+                            <div class="recent-article-card-links p-2 mb-2">
+                                <a href="#" class="fw-semibold fs-6 text-black text-decoration-none">Read Unveils the Best Canadian Cities for Biking</a><br>
+                                <a href="#" class="fw-medium text-black text-decoration-none">Read More</a> <img src="assets/img/recent/arrow.svg" alt="arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
         </div>
+        <script>
+            const swiper2 = new Swiper(".slider--recent", {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                loop: true,
+                breakpoints: {
+                    600: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1040: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                    1524: {
+                        slidesPerView: 5,
+                        spaceBetween: 5,
+                    },
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                }
+            });
+            
+        </script>
     </section>
 
-
+    <section>
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-2">
+                    <ul class="sitemap">
+                        <li><a href="#">Real Estate NY</a></li>
+                        <li><a href="#">Real Estate Brookly</a></li>
+                        <li><a href="#">Real Estate Queens</a></li>
+                        <li><a href="#">Real Estate The Bronx</a></li>
+                        <li><a href="#">Real Estate Staten</a></li>
+                        <li><a href="#">Real Estate Jersey</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="sitemap">
+                        <li><a href="#">Real Estate Norwalk</a></li>
+                        <li><a href="#">Real Estate Downey</a></li>
+                        <li><a href="#">Real Estate Torrance</a></li>
+                        <li><a href="#">Real Estate Pomona</a></li>
+                        <li><a href="#">Real Estate Glendale</a></li>
+                        <li><a href="#">Real Estate Inglewood</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="sitemap">
+                        <li><a href="#">Real Estate Chicago</a></li>
+                        <li><a href="#">Real Estate Cook</a></li>
+                        <li><a href="#">Real Estate Kane</a></li>
+                        <li><a href="#">Real Estate Lake</a></li>
+                        <li><a href="#">Real Estate Will</a></li>
+                        <li><a href="#">Real Estate DuPage</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="sitemap">
+                        <li><a href="#">Real Estate NY</a></li>
+                        <li><a href="#">Real Estate Brookly</a></li>
+                        <li><a href="#">Real Estate Queens</a></li>
+                        <li><a href="#">Real Estate The Bronx</a></li>
+                        <li><a href="#">Real Estate Staten</a></li>
+                        <li><a href="#">Real Estate Jersey</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="sitemap">
+                        <li><a href="#">Real Estate Norwalk</a></li>
+                        <li><a href="#">Real Estate Downey</a></li>
+                        <li><a href="#">Real Estate Torrance</a></li>
+                        <li><a href="#">Real Estate Pomona</a></li>
+                        <li><a href="#">Real Estate Glendale</a></li>
+                        <li><a href="#">Real Estate Inglewood</a></li>  
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <ul class="sitemap">
+                        <li><a href="#">Real Estate NY</a></li>
+                        <li><a href="#">Real Estate Brookly</a></li>
+                        <li><a href="#">Real Estate Queens</a></li>
+                        <li><a href="#">Real Estate The Bronx</a></li>
+                        <li><a href="#">Real Estate Staten</a></li>
+                        <li><a href="#">Real Estate Jersey</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </section>
 
 
 

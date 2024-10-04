@@ -398,3 +398,23 @@ img {
     }
 }
 
+.sitemap {
+    list-style-type: none;
+    padding: 0;
+    li 
+    {
+        a 
+        {
+            text-decoration: none;
+            color: #3D3E3F;
+            transition: all 200ms;
+            display: block;
+            &:hover 
+            {
+                margin-left: 15px;
+                color: #000000;
+                font-weight:480;
+            }
+        }
+    }
+}
